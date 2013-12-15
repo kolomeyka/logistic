@@ -20,6 +20,11 @@
 		2B3162E5185E3F940025CFAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3162E1185E3F940025CFAC /* Images.xcassets */; };
 		2B3162E6185E3F940025CFAC /* Logistics-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B3162E3185E3F940025CFAC /* Logistics-Info.plist */; };
 		2B3162EA185E447A0025CFAC /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3162E9185E447A0025CFAC /* Storyboard_iPad.storyboard */; };
+		2B3162F2185E475D0025CFAC /* LGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3162F1185E475D0025CFAC /* LGLoginViewController.m */; };
+		2B3162F6185E48BC0025CFAC /* LGMainSchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3162F5185E48BC0025CFAC /* LGMainSchemeViewController.m */; };
+		2B3162FA185E49130025CFAC /* LGMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3162F9185E49130025CFAC /* LGMenuViewController.m */; };
+		2B316300185E4E180025CFAC /* LGMainStructureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3162FF185E4E180025CFAC /* LGMainStructureView.m */; };
+		2B316303185E4EDC0025CFAC /* LGStructureLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B316302185E4EDC0025CFAC /* LGStructureLevelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,16 @@
 		2B3162E1185E3F940025CFAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2B3162E3185E3F940025CFAC /* Logistics-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Logistics-Info.plist"; sourceTree = "<group>"; };
 		2B3162E9185E447A0025CFAC /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
+		2B3162F0185E475D0025CFAC /* LGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLoginViewController.h; sourceTree = "<group>"; };
+		2B3162F1185E475D0025CFAC /* LGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLoginViewController.m; sourceTree = "<group>"; };
+		2B3162F4185E48BC0025CFAC /* LGMainSchemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMainSchemeViewController.h; sourceTree = "<group>"; };
+		2B3162F5185E48BC0025CFAC /* LGMainSchemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMainSchemeViewController.m; sourceTree = "<group>"; };
+		2B3162F8185E49130025CFAC /* LGMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMenuViewController.h; sourceTree = "<group>"; };
+		2B3162F9185E49130025CFAC /* LGMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMenuViewController.m; sourceTree = "<group>"; };
+		2B3162FE185E4E180025CFAC /* LGMainStructureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMainStructureView.h; sourceTree = "<group>"; };
+		2B3162FF185E4E180025CFAC /* LGMainStructureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMainStructureView.m; sourceTree = "<group>"; };
+		2B316301185E4EDC0025CFAC /* LGStructureLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGStructureLevelView.h; sourceTree = "<group>"; };
+		2B316302185E4EDC0025CFAC /* LGStructureLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGStructureLevelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +150,9 @@
 		2B3162D7185E3F8C0025CFAC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2B316305185E50A40025CFAC /* DataModel */,
+				2B316304185E509E0025CFAC /* Logic */,
+				2B3162EB185E47260025CFAC /* UserInterface */,
 				2B3162D8185E3F8C0025CFAC /* AppDelegate */,
 				2B3162DB185E3F8D0025CFAC /* Other */,
 			);
@@ -183,6 +201,85 @@
 				2B3162E9185E447A0025CFAC /* Storyboard_iPad.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2B3162EB185E47260025CFAC /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2B3162F7185E49070025CFAC /* MenuViewController */,
+				2B3162F3185E48A70025CFAC /* MainSchemeViewController */,
+				2B3162EF185E475D0025CFAC /* LoginViewController */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		2B3162EF185E475D0025CFAC /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B3162F0185E475D0025CFAC /* LGLoginViewController.h */,
+				2B3162F1185E475D0025CFAC /* LGLoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		2B3162F3185E48A70025CFAC /* MainSchemeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B3162F4185E48BC0025CFAC /* LGMainSchemeViewController.h */,
+				2B3162F5185E48BC0025CFAC /* LGMainSchemeViewController.m */,
+			);
+			path = MainSchemeViewController;
+			sourceTree = "<group>";
+		};
+		2B3162F7185E49070025CFAC /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B3162FB185E4D820025CFAC /* Views */,
+				2B3162F8185E49130025CFAC /* LGMenuViewController.h */,
+				2B3162F9185E49130025CFAC /* LGMenuViewController.m */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		2B3162FB185E4D820025CFAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B3162FC185E4DFE0025CFAC /* MainStructureView */,
+				2B3162FD185E4DFE0025CFAC /* StructureLevelView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B3162FC185E4DFE0025CFAC /* MainStructureView */ = {
+			isa = PBXGroup;
+			children = (
+				2B3162FE185E4E180025CFAC /* LGMainStructureView.h */,
+				2B3162FF185E4E180025CFAC /* LGMainStructureView.m */,
+			);
+			path = MainStructureView;
+			sourceTree = "<group>";
+		};
+		2B3162FD185E4DFE0025CFAC /* StructureLevelView */ = {
+			isa = PBXGroup;
+			children = (
+				2B316301185E4EDC0025CFAC /* LGStructureLevelView.h */,
+				2B316302185E4EDC0025CFAC /* LGStructureLevelView.m */,
+			);
+			path = StructureLevelView;
+			sourceTree = "<group>";
+		};
+		2B316304185E509E0025CFAC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		2B316305185E50A40025CFAC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,8 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3162FA185E49130025CFAC /* LGMenuViewController.m in Sources */,
 				2B3162DF185E3F8D0025CFAC /* main.m in Sources */,
+				2B3162F2185E475D0025CFAC /* LGLoginViewController.m in Sources */,
+				2B316303185E4EDC0025CFAC /* LGStructureLevelView.m in Sources */,
 				2B3162DE185E3F8D0025CFAC /* LGAppDelegate.m in Sources */,
+				2B316300185E4E180025CFAC /* LGMainStructureView.m in Sources */,
+				2B3162F6185E48BC0025CFAC /* LGMainSchemeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
